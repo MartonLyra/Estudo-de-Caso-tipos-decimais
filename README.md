@@ -17,7 +17,7 @@ No código do presente repositório, demonstro como podemos perceber esse erro s
 
 ## Proposta do código:
 
-Basicamente, o código do presente repositório inicializa três variáveis: uma do tipo float, outra do tipo double e uma terceira do tipo BigDecimal, todas com o valor 2.000.
+Basicamente, o [código do presente repositório](src/Main.java) inicializa três variáveis: uma do tipo float, outra do tipo double e uma terceira do tipo BigDecimal, todas com o valor 2.000.
 
 Em seguida, entra num loop que se repetirá por mil iterações e, a cada iteração, incrementa todos os números em 0,01 (1/100). Um centésimo é representado com duas casas decimais. Portanto, não era para termos problemas com o tipo float e, muito menos, com o tipo double.
 
