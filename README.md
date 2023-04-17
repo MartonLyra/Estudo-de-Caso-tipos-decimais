@@ -20,37 +20,37 @@ No código do presente repositório, demonstro como podemos perceber esse erro s
 
 
 
-`Inicialização: (Float = 2000.0) ; (Double = 2000.0) ; (BigDecimal = 2000)
-A cada iteração do loop vamos incrementar 0.01 ao seu valor e exibir como cada tipo de dado se comporta
-1: (Float = 2000.0) ; (Double = 2000.0) ; (BigDecimal = 2000) - Float e Double são Iguais: 2000.0;
-2: (Float = 2000.01) ; (Double = 2000.01) ; (BigDecimal = 2000.01);
-3: (Float = 2000.02) ; (Double = 2000.02) ; (BigDecimal = 2000.02);
-4: (Float = 2000.03) ; (Double = 2000.03) ; (BigDecimal = 2000.03);
-5: (Float = 2000.04) ; (Double = 2000.04) ; (BigDecimal = 2000.04);
-6: (Float = 2000.05) ; (Double = 2000.05) ; (BigDecimal = 2000.05);
-7: (Float = 2000.06) ; (Double = 2000.06) ; (BigDecimal = 2000.06);
-8: (Float = 2000.0701) ; (Double = 2000.07) ; (BigDecimal = 2000.07);
-9: (Float = 2000.0801) ; (Double = 2000.08) ; (BigDecimal = 2000.08);
-10: (Float = 2000.0901) ; (Double = 2000.09) ; (BigDecimal = 2000.09);
-11: (Float = 2000.1001) ; (Double = 2000.1) ; (BigDecimal = 2000.10);
-12: (Float = 2000.1101) ; (Double = 2000.11) ; (BigDecimal = 2000.11);
-13: (Float = 2000.1201) ; (Double = 2000.12) ; (BigDecimal = 2000.12);
-14: (Float = 2000.1301) ; (Double = 2000.1299999999999) ; (BigDecimal = 2000.13);
-15: (Float = 2000.1401) ; (Double = 2000.1399999999999) ; (BigDecimal = 2000.14);
-
-(...)
-
-995: (Float = 2009.9497) ; (Double = 2009.939999999991) ; (BigDecimal = 2009.94);
-996: (Float = 2009.9597) ; (Double = 2009.949999999991) ; (BigDecimal = 2009.95);
-997: (Float = 2009.9697) ; (Double = 2009.959999999991) ; (BigDecimal = 2009.96);
-998: (Float = 2009.9797) ; (Double = 2009.969999999991) ; (BigDecimal = 2009.97);
-999: (Float = 2009.9897) ; (Double = 2009.979999999991) ; (BigDecimal = 2009.98);
-1000: (Float = 2009.9998) ; (Double = 2009.989999999991) ; (BigDecimal = 2009.99);
-
-Somatória:
-      Float: 2005010.0
-     Double: 2005004.9999999942
- BigDecimal: 2005005.00`
+    Inicialização: (Float = 2000.0) ; (Double = 2000.0) ; (BigDecimal = 2000)
+    A cada iteração do loop vamos incrementar 0.01 ao seu valor e exibir como cada tipo de dado se comporta
+    1: (Float = 2000.0) ; (Double = 2000.0) ; (BigDecimal = 2000) - Float e Double são Iguais: 2000.0;
+    2: (Float = 2000.01) ; (Double = 2000.01) ; (BigDecimal = 2000.01);
+    3: (Float = 2000.02) ; (Double = 2000.02) ; (BigDecimal = 2000.02);
+    4: (Float = 2000.03) ; (Double = 2000.03) ; (BigDecimal = 2000.03);
+    5: (Float = 2000.04) ; (Double = 2000.04) ; (BigDecimal = 2000.04);
+    6: (Float = 2000.05) ; (Double = 2000.05) ; (BigDecimal = 2000.05);
+    7: (Float = 2000.06) ; (Double = 2000.06) ; (BigDecimal = 2000.06);
+    8: (Float = 2000.0701) ; (Double = 2000.07) ; (BigDecimal = 2000.07);
+    9: (Float = 2000.0801) ; (Double = 2000.08) ; (BigDecimal = 2000.08);
+    10: (Float = 2000.0901) ; (Double = 2000.09) ; (BigDecimal = 2000.09);
+    11: (Float = 2000.1001) ; (Double = 2000.1) ; (BigDecimal = 2000.10);
+    12: (Float = 2000.1101) ; (Double = 2000.11) ; (BigDecimal = 2000.11);
+    13: (Float = 2000.1201) ; (Double = 2000.12) ; (BigDecimal = 2000.12);
+    14: (Float = 2000.1301) ; (Double = 2000.1299999999999) ; (BigDecimal = 2000.13);
+    15: (Float = 2000.1401) ; (Double = 2000.1399999999999) ; (BigDecimal = 2000.14);
+    
+    (...)
+    
+    995: (Float = 2009.9497) ; (Double = 2009.939999999991) ; (BigDecimal = 2009.94);
+    996: (Float = 2009.9597) ; (Double = 2009.949999999991) ; (BigDecimal = 2009.95);
+    997: (Float = 2009.9697) ; (Double = 2009.959999999991) ; (BigDecimal = 2009.96);
+    998: (Float = 2009.9797) ; (Double = 2009.969999999991) ; (BigDecimal = 2009.97);
+    999: (Float = 2009.9897) ; (Double = 2009.979999999991) ; (BigDecimal = 2009.98);
+    1000: (Float = 2009.9998) ; (Double = 2009.989999999991) ; (BigDecimal = 2009.99);
+    
+    Somatória:
+          Float: 2005010.0
+         Double: 2005004.9999999942
+     BigDecimal: 2005005.00
 
 
 
@@ -76,9 +76,9 @@ Somatória:
 
 - Quando o loop conclui as mil iterações, podemos verificar os seguintes resultados da soma:
 
-`      Float: 2005010.0
-     Double: 2005004.9999999942
- BigDecimal: 2005005.00`
+              Float: 2005010.0
+             Double: 2005004.9999999942
+         BigDecimal: 2005005.00
 
 - Observe que a diferença de float para double não é mais de frações, mas sim, de mais de 5 unidades.
   - Já a diferença de double para BigDecimal pode ser desprezível, para a maioria dos sistemas.
