@@ -15,6 +15,12 @@ Para isso, precisamos analisar as necessidades do sistema para não cair no erro
 
 No código do presente repositório, demonstro como podemos perceber esse erro simplesmente realizando sucessivas somas de apenas '0,01' que, teoricamente, não deveria causar problemas, devido a sua precisão.
 
+## Proposta do código:
+
+Basicamente, o código do presente repositório inicializa três variáveis: uma do tipo float, outra do tipo double e uma terceira do tipo BigDecimal, todas com o valor 2.000.
+
+Em seguida, entra num loop que se repetirá por mil iterações e, a cada iteração, incrementa todos os números em 0,01 (1/100). Um centésimo é representado com duas casas decimais. Portanto, não era para termos problemas com o tipo float e, muito menos, com o tipo double.
+
 
 ## Ao executar o código, sua saída será algo assim:
 
@@ -55,11 +61,6 @@ No código do presente repositório, demonstro como podemos perceber esse erro s
 
 
 
-- Basicamente, o código inicializa três variáveis: uma do tipo float, outra do tipo double e uma terceira do tipo BigDecimal, todas com o valor 2.000.
-
-
-- Em seguida, entra num loop que se repetirá por mil iterações e, a cada iteração, incrementa todos os números em 0,01 (1/100).
-  - Um centésimo é representado com duas casas decimais. Portanto, não era para termos problemas com o tipo float e, muito menos, com o tipo double.
 
 
 - Observe que, na primeira iteração, o código que compara float com double usando '==' exibe que as duas variáveis são iguais.  
