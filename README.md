@@ -82,15 +82,20 @@ Em seguida, entra num loop que se repetirá por mil iterações e, a cada itera�
          BigDecimal: 2005005.00
 
 - Observe que a diferença de float para double não é mais de frações, mas sim, de mais de 5 unidades.
-  - Já a diferença de double para BigDecimal pode ser desprezível, para a maioria dos sistemas.
+- Já a diferença de double para BigDecimal pode ser desprezível, para a maioria dos sistemas.
 
 ## Conclusão:
 
-   - Pode ser interessante substituir as variáveis do tipo float para o tipo double, na maioria dos casos.
+   - Em seu código, pode ser consideravelmente interessante substituir as variáveis do tipo float para o tipo double, para a maioria dos casos.
+
+
    - O tipo double ainda é uma excelente opção para a maioria dos sistemas, pela facilidade e velocidade em realizar operações aritméticas além de consumir menos espaço em memória, quando o comparamos com o tipo BigDecimal.
+
+
    - Caso a precisão precise ser levada extremamente a sério, mesmo que para duas casas decimais, o BigDecimal pode ser a melhor opção.
-   - Caso precise comparar um tipo de ponto flutuante com outro, evite usar o '=='.
-        Substitua por '<=' ou '>=', ou considere uma margem de erro para considerar como iguais como, por exemplo:
+
+
+   - Caso precise comparar um tipo de ponto flutuante com outro, evite usar o '=='. Substitua por '<=' ou '>=', ou considere uma margem de erro para considerar ambos os números como iguais. Por exemplo:
 
             // Float f1 == Float f2 ?
             if (Math.abs(f1 - f2) <= 0.0001f) {
